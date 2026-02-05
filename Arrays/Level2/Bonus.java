@@ -2,9 +2,7 @@ package Arrays.Level2;
 
 import java.util.Scanner;
 
- 
-public class Bonus {
-   static class Initial{
+ class Initial{
     int salary;
     int years;
     public Initial(int salary, int years) {
@@ -12,7 +10,7 @@ public class Bonus {
         this.years = years;
     }
 }
- static class Final{
+ class Final{
     int totalAmount;
     int bonus;
     public Final(int totalAmount, int bonus) {
@@ -20,11 +18,13 @@ public class Bonus {
         this.bonus = bonus;
     }
 }
+public class Bonus {
     public static void main(String[] args) {
         Initial arr[]=new Initial[10];
         Final arr2[]=new Final[10];
         Scanner sc=new Scanner(System.in);
         for(int i=0;i<arr.length;i++){
+            System.out.println("Enter salary and years of service: ");
             int salary=sc.nextInt();
             int years=sc.nextInt();
             arr[i]=new Initial(salary, years);
