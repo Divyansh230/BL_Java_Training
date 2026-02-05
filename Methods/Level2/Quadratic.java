@@ -26,11 +26,11 @@ public class Quadratic {
             return null; // No real roots
         } else if (discriminant == 0) {
             double root = -b / (2 * a);
-            return new double[]{root}; // One real root
+            return new double[]{root}; 
         } else {
             double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
             double root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-            return new double[]{root1, root2}; // Two real roots
+            return new double[]{root1, root2}; 
         }
     }
 
