@@ -1,9 +1,7 @@
-import Generics.Smart_Warehouse_System.Electronics;
-import Generics.Smart_Warehouse_System.Furniture;
-import Generics.Smart_Warehouse_System.Storage;
-import Generics.Smart_Warehouse_System.WildcartUtils;
+package Generics.Smart_Warehouse_System;
 
-public class Main {
+
+public  class Main {
     public static void main(String[] args) {
         Storage<Electronics> electronicsStorage=new Storage<>();
         electronicsStorage.addItem(new Electronics("Electronics A", 10));
@@ -16,4 +14,5 @@ public class Main {
 
         WildcartUtils.dispaly(furnitureStorage.getItems());
     }
+
 }
