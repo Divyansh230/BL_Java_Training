@@ -3,7 +3,7 @@ package ZomatoDeliveryApp.model;
 public class PickupOrder extends Order {
     private String res_Add;
 
-    public PickupOrder(String res_Add) {
+    public PickupOrder() {
         this.res_Add = "";
     }
 
